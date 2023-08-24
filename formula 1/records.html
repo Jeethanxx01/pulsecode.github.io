@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>F1 World Records</title>
+<style>
+  /* Reset some default styling */
+body, h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  max-width: 1200px;
+}
+
+.record-box {
+  width: 300px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.record-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.dropdown-content a:hover {
+  background-color: #444;
+  border-radius: 5px;
+}
+
+/* Basic styling for the header and footer */
+header, footer {
+  background: linear-gradient(45deg, #ff0000, #000000, #ffffff);
+  color: white;
+  padding: 10px;
+  text-align: center;
+   width:100%;
+}
+
+/* Styling for the navigation menu */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Styling for the main content */
+.content {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+</style>
+</head>
+<body>
+<header>
+    <h1>Formula 1 World Records</h1>
+    <nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li class="dropdown">
+      <a href="javascript:void(0);" class="dropbtn">Racing</a>
+      <div class="dropdown-content">
+        <a href="updates.html">Insider</a>
+        <a href="racing.html">Grand prix </a>
+        <a href="profiles.html">profiles</a>
+        <a href="regulations.html">Regulations</a>
+      </div>
+    </li>
+<li class="dropdown">
+      <a href="javascript:void(0);" class="dropbtn">Information</a>
+      <div class="dropdown-content">
+        <a href="technical.html">Technical Terms</a>
+        <a href="insights.html">Engineering Insights</a>
+        <a href="champions.html">Champions stats </a>
+        <a href="records.html">Records</a>
+      </div>
+    </li>
+ <li class="dropdown">
+      <a href="javascript:void(0);" class="dropbtn">Media</a>
+      <div class="dropdown-content">
+        <a href="archives.html">Archive</a>
+        <a href="engagement.html">Engagement</a>
+        <a href="multimedia.html">Multimedia</a>
+      </div>
+    </li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+</nav>
+  </header>
+<section>
+<div class="container">
+  <div class="record-box">
+    <h2>Driver World Record</h2>
+    <p>Most World Championships: 7 (Michael Schumacher and Lewis Hamilton)</p>
+    <p>These drivers share the record for the most Formula 1 World Championships, with each winning the championship title 7 times during their careers.</p>
+  </div>
+  <div class="record-box">
+    <h2>Team World Record</h2>
+    <p>Most Consecutive Constructors' Championships: 5 (Scuderia Ferrari)</p>
+    <p>Scuderia Ferrari holds the record for winning the Constructors' Championship title for 5 consecutive years, showcasing their dominance in the sport.</p>
+  </div>
+  <div class="record-box">
+    <h2>Team Principal World Record</h2>
+    <p>Longest-serving Team Principal: 41 years (Frank Williams)</p>
+    <p>Frank Williams holds the record for being the longest-serving Team Principal in Formula 1, contributing to the success of Williams Racing.</p>
+  </div>
+  <div class="record-box">
+    <h2>Driver World Record</h2>
+    <p>Most Grand Slams (Pole, Win, Fastest Lap, Leading Every Lap) in a Season: 5 (Jim Clark)</p>
+    <p>Jim Clark set the record for achieving the Grand Slam in a single season by securing pole position, race win, fastest lap, and leading every lap in 5 races.</p>
+  </div>
+  <div class="record-box">
+    <h2>Driver World Record</h2>
+    <p>Most Consecutive Wins: 9 (Alberto Ascari)</p>
+    <p>Alberto Ascari achieved the incredible feat of winning 9 consecutive races, a record that still stands as one of the longest winning streaks in F1 history.</p>
+  </div>
+  <div class="record-box">
+    <h2>Driver World Record</h2>
+    <p>Most Pole Positions: 101 (Lewis Hamilton)</p>
+    <p>Lewis Hamilton holds the record for the most pole positions, showcasing his exceptional speed and qualifying prowess.</p>
+  </div>
+  <div class="record-box">
+    <h2>Driver World Record</h2>
+    <p>Most Grand Slam Wins: 8 (Michael Schumacher)</p>
+    <p>Michael Schumacher achieved the Grand Slam (pole, race win, fastest lap, leading every lap) in 8 races during his illustrious career.</p>
+  </div>
+  <div class="record-box">
+    <h2>Team World Record</h2>
+    <p>Most Points in a Season: 726 (Mercedes, 2020)</p>
+    <p>Mercedes set the record for the most points accumulated in a single season, highlighting their dominant performance throughout the year.</p>
+  </div>
+  <div class="record-box">
+    <h2>Driver World Record</h2>
+    <p>Most Consecutive Points Finishes: 33 (Kimi Räikkönen)</p>
+    <p>Kimi Räikkönen holds the record for the most consecutive points finishes, showcasing his consistency and skill in earning points in races.</p>
+  </div>
+  <div class="record-box">
+    <h2>Driver World Record</h2>
+    <p>Most Fastest Laps in a Season: 10 (Jim Clark and Michael Schumacher)</p>
+    <p>Both Jim Clark and Michael Schumacher share the record for the most fastest laps achieved in a single Formula 1 season.</p>
+  </div>
+  <div class="record-box">
+    <h2>Driver World Record</h2>
+    <p>Youngest World Champion: 23 years, 134 days (Max Verstappen)</p>
+    <p>Max Verstappen achieved the record for being the youngest driver to win the Formula 1 World Championship at the age of 23 years and 134 days.</p>
+  </div>
+  <div class="record-box">
+    <h2>Driver World Record</h2>
+    <p>Oldest World Champion: 46 years, 41 days (Juan Manuel Fangio)</p>
+    <p>Juan Manuel Fangio holds the record for being the oldest driver to win the Formula 1 World Championship at the age of 46 years and 41 days.</p>
+  </div>
+  <div class="record-box">
+    <h2>Driver World Record</h2>
+    <p>Most Consecutive Podiums: 19 (Michael Schumacher)</p>
+    <p>Michael Schumacher achieved the record for the most consecutive podium finishes, showcasing his consistency at the top of the field.</p>
+  </div>
+  <div class="record-box">
+    <h2>Driver World Record</h2>
+    <p>Most Wins at a Single Grand Prix: 8 (Michael Schumacher at French Grand Prix)</p>
+    <p>Michael Schumacher holds the record for the most wins at a single Grand Prix, with 8 victories at the French Grand Prix.</p>
+  </div>
+  <div class="record-box">
+    <h2>Driver World Record</h2>
+    <p>Most Wins at Different Circuits: 23 (Lewis Hamilton)</p>
+    <p>Lewis Hamilton holds the record for the most wins at different Formula 1 circuits, showcasing his adaptability and skill on various tracks.</p>
+  </div>
+  <!-- Add more record boxes with descriptions here -->
+</div>
+</section>
+</body>
+</html>

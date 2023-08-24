@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formula 1 Insider - Latest News and Updates</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .article {
+      background-color: white;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+h3{ 
+text-align:right;
+ font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+color: #3399ff;
+}
+  </style>
+</head>
+<body>
+<header>
+ <h1>Formula 1 Insider</h1>
+    <nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li class="dropdown">
+      <a href="javascript:void(0);" class="dropbtn">Racing</a>
+      <div class="dropdown-content">
+        <a href="updates.html">Insider</a>
+        <a href="racing.html">Grand prix </a>
+        <a href="profiles.html">profiles</a>
+        <a href="regulations.html">Regulations</a>
+      </div>
+    </li>
+<li class="dropdown">
+      <a href="javascript:void(0);" class="dropbtn">Information</a>
+      <div class="dropdown-content">
+        <a href="technical.html">Technical Terms</a>
+        <a href="insights.html">Engineering Insights</a>
+        <a href="champions.html">Champions stats </a>
+        <a href="records.html">Records</a>
+      </div>
+    </li>
+ <li class="dropdown">
+      <a href="javascript:void(0);" class="dropbtn">Media</a>
+      <div class="dropdown-content">
+        <a href="archive.html">Archive</a>
+        <a href="engagement.html">Engagement</a>
+        <a href="multimedia.html">Multimedia</a>
+      </div>
+    </li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+    </nav>
+  </header>
+    <p>Delivering the latest F1 news and updates from around the globe</p>
+  <div class="container">
+    <div class="article">
+<div>
+<h3>pinned</h3>
+</div>
+      <h2>Race News: Emilia Romagna GP called off on Wednesday</h2> 
+      <p>[The Emilia Romagna Grand Prix was called off on Wednesday amid heavy flooding in the region after unprecedented rainfall in northern Italy in recent weeks.]</p>
+      <p><a href="https://www.skysports.com/f1/news/12433/12883591/emilia-romagna-gp-why-formula-1-had-to-call-off-2023-race-amid-heavy-flooding-in-italy-near-imola" target="_blank">Read more</a></p>
+    </div>
+    <div class="article">
+<div>
+<h3>pinned</h3>
+</div>
+      <h2>Breaking News:  Daniel Ricciardo to replace De Vries at alphatauri with immediate effect</h2> 
+      <p>[Daniel Ricciardo will return to the F1 grid following his departure from McLaren at the end of the 2022 season; Nyck de Vries debut F1 campaign has ended after just 10 races; watch Ricciardo's return at the Hungarian Grand Prix live on Sky Sports F1 from July 21-23]</p>
+      <p><a href="https://www.skysports.com/f1/news/12433/12919160/daniel-ricciardo-will-drive-for-alphatauri-and-replace-nyck-de-vries-with-immediate-effect-ahead-of-hungarian-gp">Read more</a></p>
+    </div>
+    <div class="article">
+      <h2>Post-Race Analysis: Ex-F1 driver Jolyon Palmer explains the complex and crucial relationship between driver and race engineer</h2>
+      <p>[We heard Max Verstappen and his race engineer Gianpiero ‘GP’ Lambiase exchanging some pretty spiky messages over the radio during the Belgian Grand Prix weekend (see the video clip below). But is that just the normal give and.....]</p>
+      <p><a href="https://www.formula1.com/en/latest/article.ex-f1-driver-jolyon-palmer-explains-the-complex-and-crucial-relationship.6VmKLC49W63g7DdutTLkQy.html">Read more</a></p>
+    </div>
+    <div class="article">
+      <h2>Team News: Stella explains how 'evolving' Norris is pulling McLaren along and has become a 'leading driver'</h2>
+      <p>[Andrea Stella has seen an evolution in Lando Norris as a “leading driver” this season, as the McLaren Team Principal also explained how he and Oscar Piastri are working together to push the team forward.…]</p>
+      <p><a href="https://www.formula1.com/en/latest/article.stella-explains-how-evolving-norris-is-pulling-mclaren-along-and-has-become.QmkKlTx7jtArze6JJosk8.html">Read more</a></p>
+    </div>
+  </div>
+  <script>
+const articles = [
+      {
+        type: "Breaking News",
+        title: "Exciting F1 Developments",
+        content: "New developments in the F1 world are shaking things up...",
+      },
+      {
+        type: "Race Preview",
+        title: "Upcoming Grand Prix Preview",
+        content: "Get ready for the upcoming Grand Prix with our race preview...",
+      },
+      {
+        type: "Post-Race Analysis",
+        title: "Thrilling Race Analysis",
+        content: "Analyzing the recent race and its impact on the championship...",
+      },
+      {
+        type: "Behind-the-Scenes",
+        title: "Inside the F1 Team Garages",
+        content: "Take a peek behind the scenes and discover what happens in the F1 team garages...",
+      },
+    ];
+
+    const container = document.getElementById("articleContainer");
+
+    // Function to create and append articles
+    function createArticle(article) {
+      const articleElement = document.createElement("div");
+      articleElement.classList.add("article");
+
+      const heading = document.createElement("h2");
+      heading.textContent = `${article.type}: ${article.title}`;
+      articleElement.appendChild(heading);
+
+      const content = document.createElement("p");
+      content.textContent = article.content;
+      articleElement.appendChild(content);
+
+      const readMoreLink = document.createElement("a");
+      readMoreLink.href = `https://www.google.com/search?q=${encodeURIComponent(article.title)}+F1`;
+      readMoreLink.target = "_blank";
+      readMoreLink.textContent = "Read more";
+      articleElement.appendChild(readMoreLink);
+
+      container.appendChild(articleElement);
+    }
+
+    // Load articles
+    articles.forEach(createArticle);
+  </script>
+</body>
+</html>
