@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forum Section</title>
+<head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color:  #f4f4f4;
+      font-family: Arial, sans-serif;
+    }
+
+    header, footer {
+      text-align: center;
+      padding: 10px;
+      color: #fff;
+      background-color: #53db00;
+    }
+
+    .panel-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: calc(100vh - 60px - 60px); /* Adjust based on header and footer height */
+      padding: 20px;
+    }
+
+    .panel {
+      background-color: rgba(255, 255, 255, 0.95);
+      border-radius: 16px;
+      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+      padding: 40px;
+      width: 350px;
+      text-align: center;
+    }
+
+    .panel h2 {
+      margin-top: 0;
+      color: #333;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 14px;
+      margin-bottom: 5px;
+      color: #555;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .form-group button {
+      background-color: #0096c7;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      width: 100%;
+      transition: background-color 0.3s;
+    }
+
+    .form-group button:hover {
+      background-color: #007aa5;
+    }
+
+    .signup-link {
+      margin-top: 15px;
+      color: #555;
+    }
+
+    .signup-link a {
+      color: #007aa5;
+      text-decoration: none;
+    }
+header,footer {
+  text-align: center;
+  padding: 10px;
+  color: #fff;
+  background: linear-gradient(to right, #0f4c75, #00a8cc); //header color code
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center; 
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+@media screen and (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+  </style>
+</head>
+<body>
+  <header>
+     <h1>Forum Section</h1>
+    <nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="About.html">About</a></li> 
+     <li><a href="Dashborad.html">Dashboard</a></li> 
+     <li><a href="Forum.html">Forum Section</a></li> 
+     <li><a href="Shop.html">Shop</a></li> 
+ </ul>
+</nav>
+  </header>
+  
+<main>
+  <div class="panel-container">
+    <div class="panel">
+     <h2>Welcome Back!</h2>
+    <form>
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="form-group">
+        <button type="submit">Sign In</button>
+      </div>
+    </form>
+    <p class="signup-link">Don't have an account? <a href="signup.html">Sign Up</a></p>
+  </div>
+  </main>
+  <footer>
+    <p>&copy; 2023 Rebin solutions Website. All rights reserved.</p>
+  </footer>
+</body>
+</html>
