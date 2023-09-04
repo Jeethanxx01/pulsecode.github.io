@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: linear-gradient(to bottom, #f2f2f2, #e0e0e0);
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .container {
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .category-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .category-list li {
+            margin: 10px;
+            padding: 15px;
+            background-color: #fff;
+            border: 2px solid #007bff;
+            border-radius: 10px;
+            width: 300px;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s, background-color 0.3s, color 0.3s;
+        }
+
+        .category-list li:hover {
+            background-color: #0056b3;
+            color: #fff;
+            transform: scale(1.05);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .category-list li a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        .category-list li a:hover {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Quiz Portal</h1>
+        <p>Select the categories for your quiz</p>
+    </header>
+    <div class="container">
+        <ul class="category-list">
+            <li><a href="index1.html">Web development</a></li>
+            <li><a href="index2.html">Java programming</a></li>
+            <li><a href="index3.html">C programming</a></li>
+            <li><a href="index4.html">Data structures and Algorithms</a></li>
+            <!-- Add more categories here -->
+        </ul>
+    </div>
+</body>
+</html>
