@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Community and Engagement - Formula 1</title>
+
+    <style>
+       @font-face {
+            font-family: 'Formula font';
+            src: url(Font/Formula1-Regular.otf);
+        }
+        /* Reset some default styling and your existing styles */
+/* Reset some default styling */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #b5b1b1;
+font-family: "Formula font", sans-serif;
+margin-bottom:20px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.dropdown-content a:hover {
+  background-color: #444;
+  border-radius: 5px;
+}
+
+h1, h2, p {
+  margin: 10;
+  padding: 0;
+}
+
+/* Basic styling for the header and footer */
+header {
+  background: linear-gradient(45deg, #d40d0dcd, #733535, #000000);
+  color: #fbfafad9;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Styling for the navigation menu */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+
+        
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+margin: 50px;
+        }
+
+        .card h3 {
+            margin-top: 0;
+                    }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+h4{
+font-style: italic;
+    font-weight: normal;
+    font-size: 15px;
+    color: red;
+}
+    </style>
+</head>
+<body>
+    <header>
+       <h1>Community and Engagement - Formula 1</h1>
+    <nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li class="dropdown">
+      <a href="javascript:void(0);" class="dropbtn">Racing</a>
+      <div class="dropdown-content">
+        <a href="updates.html">Insider</a>
+        <a href="racing.html">Grand prix </a>
+        <a href="profiles.html">profiles</a>
+        <a href="regulations.html">Regulations</a>
+      </div>
+    </li>
+<li class="dropdown">
+      <a href="javascript:void(0);" class="dropbtn">Information</a>
+      <div class="dropdown-content">
+        <a href="technical.html">Technical Terms</a>
+        <a href="insights.html">Engineering Insights</a>
+        <a href="champions.html">Champions stats </a>
+        <a href="records.html">Records</a>
+      </div>
+    </li>
+ <li class="dropdown">
+      <a href="javascript:void(0);" class="dropbtn">Media</a>
+      <div class="dropdown-content">
+        <a href="archives.html">Archive</a>
+        <a href="engagement.html">Engagement</a>
+        <a href="multimedia.html">Multimedia</a>
+      </div>
+    </li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+</nav>
+    </header>
+
+    <section>
+        <div class="card" onclick="window.location.href='quiz.html'">
+            <h3>Formula 1 Quiz</h3>
+            <p>Test your knowledge with our Formula 1 quiz! Challenge yourself with a series of questions about drivers, teams, historical moments, and more.</p>
+            <h4> click on below quiz icon to take quiz</h4>
+            <img src="quiz.jpg" alt="Quiz Icon" width="80">
+        </div>
+    </section>
+
+    <section>
+        <div class="card" onclick="window.location.href='social.html'">
+            <h3>Formula 1 Social Engagements</h3>
+            <p>Follow formula 1 on social media to stay updated with the latest Formula 1 news, race highlights, and community events.</p>
+          <h4>explore below icon for social engagements</h4>
+            <img src="insta.jpg" alt="Social Icon" width="80">
+        </div>
+    </section>
+
+    </section>
+
+    <footer>
+        <!-- ... (your existing footer content) ... -->
+    </footer>
+</body>
+</html>

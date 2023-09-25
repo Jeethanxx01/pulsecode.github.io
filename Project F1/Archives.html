@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formula 1 archives </title>
+    <style>
+         @font-face {
+            font-family: 'Formula font';
+            src: url(Font/Formula1-Regular.otf);
+        }
+    /* General Styles ... (same as before) ... */
+
+        /* Historical Archives Styles */
+        .archive-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 10px;
+        }
+        .archive-box {
+            width: calc(33.33% - 20px);
+            margin-bottom: 20px;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            transition: transform 0.2s, box-shadow 0.2s;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+           
+        }
+        .archive-box img {
+            width: 100%;
+            height: 250px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.2s;
+        }
+        .archive-box h2 {
+            font-size: 20px;
+            margin: 0;
+            color: #333;
+        }
+        .archive-box p {
+            color: #666;
+            max-height: 70px;
+            overflow: hidden;
+        }
+        .archive-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+        .archive-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .archive-box:hover img {
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        .archive-box:hover::before {
+            opacity: 1;
+        }
+        @media only screen and (max-width: 768px) {
+            .archive-box {
+                width: 100%;
+            }
+        }
+/* Reset some default styling */
+body {
+  margin: 0;
+  padding: 0;
+background-color: #b5b1b1;
+font-family: "Formula font", sans-serif;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    border-radius: 5px;
+    z-index: 1;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .dropdown-content a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease-in-out;
+  }
+  .dropdown-content a:hover {
+    background-color: #444;
+    border-radius: 5px;
+  }
+
+ h1, h2, p {
+  margin: 10;
+  padding: 0;
+}
+/* Basic styling for the header and footer */
+header, footer {
+  background: linear-gradient(45deg, #d40d0dcd, #733535, #000000);
+  color: #fbfafad9;
+  padding: 10px;
+text-align: center;
+}
+
+/* Styling for the navigation menu */
+nav ul {
+  list-style: none;
+  display: flex;
+justify-content: center; 
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Styling for the main content */
+.content {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+
+    </style>
+</head>
+<body>
+   <header>
+    <h1>Formula 1 archives</h1>
+    <nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li class="dropdown">
+      <a href="javascript:void(0);" class="dropbtn">Racing</a>
+      <div class="dropdown-content">
+        <a href="updates.html">Insider</a>
+        <a href="racing.html">Grand prix </a>
+        <a href="profiles.html">profiles</a>
+        <a href="regulations.html">Regulations</a>
+      </div>
+    </li>
+<li class="dropdown">
+      <a href="javascript:void(0);" class="dropbtn">Information</a>
+      <div class="dropdown-content">
+        <a href="technical.html">Technical Terms</a>
+        <a href="insights.html">Engineering Insights</a>
+        <a href="champions">Champions stats </a>
+        <a href="records.html">Records</a>
+      </div>
+    </li>
+ <li class="dropdown">
+      <a href="javascript:void(0);" class="dropbtn">Media</a>
+      <div class="dropdown-content">
+        <a href="archive.html">Archive</a>
+        <a href="engagement.html">Engagement</a>
+        <a href="multimedia.html">Multimedia</a>
+      </div>
+    </li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+</nav>
+  </header>
+
+    
+    <!-- Legendary Drivers -->
+<h2 style="text-align: center;">Legendary Drivers</h2>
+<div class="archive-container">
+    <!-- Legendary Driver 1 -->
+    <div class="archive-box">
+        <img src="a1.jpg" alt="Legendary Driver 1 Image">
+        <h2>Ayrton Senna</h2>
+        <p>
+            Ayrton Senna, the Brazilian racing legend, won three Formula 1 World Championships (1988, 1990, 1991). 
+        </p>
+    </div>
+
+   <!-- Legendary Driver 2 -->
+<div class="archive-box">
+    <img src="a2.jpg" alt="Legendary Driver 2 Image">
+    <h2>Michael Schumacher</h2>
+    <p>
+        Michael Schumacher, a seven-time Formula 1 World Champion, dominated the sport in the 1990s and early 2000s. 
+    </p>
+</div>
+
+<!-- Legendary Driver 3 -->
+<div class="archive-box">
+    <img src="a3.jpg" alt="Legendary Driver 3 Image">
+    <h2>Juan Manuel Fangio</h2>
+    <p>
+        Juan Manuel Fangio, the Argentine racing icon, won five Formula 1 World Championships in the 1950s. 
+    </p>
+</div>
+
+<!-- New Legendary Driver 4 -->
+<div class="archive-box">
+    <img src="a4.jpg" alt="Legendary Driver 4 Image">
+    <h2>Jackie Stewart</h2>
+    <p>
+        Jackie Stewart, known as the "Flying Scot," won three Formula 1 World Championships (1969, 1971, 1973). 
+    </p>
+</div>
+
+<!-- New Legendary Driver 5 -->
+<div class="archive-box">
+    <img src="a5.jpg" alt="Legendary Driver 5 Image">
+    <h2>Niki Lauda</h2>
+    <p>
+        Niki Lauda, the Austrian racing legend, won three Formula 1 World Championships (1975, 1977, 1984).
+    </p>
+</div>
+
+<!-- New Legendary Driver 6 -->
+<div class="archive-box">
+    <img src="a6.jpg" alt="Legendary Driver 6 Image">
+    <h2>Alain Prost</h2>
+    <p>
+        Alain Prost, the "Professor," secured four Formula 1 World Championships (1985, 1986, 1989, 1993).
+    </p>
+</div>
+
+<!-- New Legendary Driver 7 -->
+<div class="archive-box">
+    <img src="a7.jpg" alt="Legendary Driver 7 Image">
+    <h2>Nelson Piquet</h2>
+    <p>
+        Nelson Piquet, the Brazilian driver, won three Formula 1 World Championships (1981, 1983, 1987). 
+    </p>
+</div>
+
+<!-- New Legendary Driver 8 -->
+<div class="archive-box">
+    <img src="a8.jpg" alt="Legendary Driver 8 Image">
+    <h2>Sebastian Vettel</h2>
+    <p>
+        Sebastian Vettel, the German racer, won four consecutive Formula 1 World Championships (2010, 2011, 2012, 2013). 
+    </p>
+</div>
+
+<!-- New Legendary Driver 9 -->
+<div class="archive-box">
+    <img src="a9.jpg" alt="Legendary Driver 9 Image">
+    <h2>Jim Clark</h2>
+    <p>
+        Jim Clark, the Scottish racing legend, won two Formula 1 World Championships (1963, 1965). 
+    </p>
+</div>
+</div>
+
+<!-- Iconic Moments -->
+<h2 style="text-align: center;">Iconic Moments</h2>
+<div class="archive-container">
+    <!-- Iconic Moment 1 -->
+    <div class="archive-box">
+        <img src="a10.jpg" alt="Iconic Moment 1 Image">
+        <h2>1976 Japanese Grand Prix</h2>
+        <p>
+            The 1976 Japanese Grand Prix at Fuji Speedway saw a legendary battle between James Hunt and Niki Lauda for the championship. 
+        </p>
+    </div>
+
+    <!-- Iconic Moment 2 -->
+    <div class="archive-box">
+        <img src="a11.jpg" alt="Iconic Moment 2 Image">
+        <h2>1988 Monaco Grand Prix</h2>
+        <p>
+            Ayrton Senna's incredible performance in the rain during the 1988 Monaco Grand Prix remains etched in history.
+        </p>
+    </div>
+
+    <!-- Iconic Moment 3 -->
+    <div class="archive-box">
+        <img src="a12.jpg" alt="Iconic Moment 3 Image">
+        <h2>2008 Brazilian Grand Prix</h2>
+        <p>
+            The 2008 Brazilian Grand Prix provided a thrilling season finale. 
+        </p>
+    </div>
+
+    <!-- Iconic Moment 4 -->
+    <div class="archive-box">
+        <img src="a13.jpg" alt="Iconic Moment 4 Image">
+        <h2>1991 Suzuka Grand Prix</h2>
+        <p>
+            The 1991 Suzuka Grand Prix witnessed a legendary battle between Ayrton Senna and Nigel Mansell. 
+        </p>
+    </div>
+
+    <!-- New Iconic Moment 5 -->
+    <div class="archive-box">
+        <img src="a14.jpg" alt="Iconic Moment 5 Image">
+        <h2>2005 United States Grand Prix</h2>
+        <p>
+            The 2005 United States Grand Prix was marked by a dramatic tire controversy, with only six cars starting the race.
+        </p>
+    </div>
+
+    <!-- New Iconic Moment 6 -->
+    <div class="archive-box">
+        <img src="a15.jpg" alt="Iconic Moment 6 Image">
+        <h2>1985 Portuguese Grand Prix</h2>
+        <p>
+            The 1985 Portuguese Grand Prix saw a historic moment when Ayrton Senna overtook Alain Prost around the outside at Turn 1.
+        </p>
+    </div>
+
+    <!-- New Iconic Moment 7 -->
+    <div class="archive-box">
+        <img src="a16.jpg" alt="Iconic Moment 7 Image">
+        <h2>1973 Spanish Grand Prix</h2>
+        <p>
+            The 1973 Spanish Grand Prix at Montjuïc Park Circuit saw a surprise victory by Jackie Stewart in torrential rain.
+        </p>
+    </div>
+
+    <!-- New Iconic Moment 8 -->
+    <div class="archive-box">
+        <img src="a17.jpg" alt="Iconic Moment 8 Image">
+        <h2>2019 German Grand Prix</h2>
+        <p>
+            The 2019 German Grand Prix was a chaotic race with changing weather conditions. 
+        </p>
+    </div>
+
+    <!-- New Iconic Moment 9 -->
+    <div class="archive-box">
+        <img src="a18.jpg" alt="Iconic Moment 9 Image">
+        <h2>1986 Australian Grand Prix</h2>
+        <p>
+            The 1986 Australian Grand Prix in Adelaide saw Alain Prost and Nigel Mansell battling for the championship.
+        </p>
+    </div>
+</div>
+
+<!-- Significant Milestones -->
+<h2 style="text-align: center;">Significant Milestones</h2>
+<div class="archive-container">
+    <!-- Significant Milestone 1 -->
+    <div class="archive-box">
+        <img src="a19.jpg" alt="Significant Milestone 1 Image">
+        <h2>First Formula 1 World Championship</h2>
+        <p>
+            The first Formula 1 World Championship was held in 1950, with Giuseppe Farina winning the inaugural title.
+        </p>
+    </div>
+
+    <!-- Significant Milestone 2 -->
+    <div class="archive-box">
+        <img src="a20.jpg" alt="Significant Milestone 2 Image">
+        <h2>Introduction of Turbocharged Engines</h2>
+        <p>
+            The introduction of turbocharged engines in the late 1970s revolutionized Formula 1. 
+        </p>
+    </div>
+
+    <!-- Significant Milestone 3 -->
+    <div class="archive-box">
+        <img src="a21.jpg" alt="Significant Milestone 3 Image">
+        <h2>Seventh World Title by Michael Schumacher</h2>
+        <p>
+            Michael Schumacher's seventh World Championship in 2004 solidified his status as the most successful driver in Formula 1 history at that time.
+        </p>
+    </div>
+
+    <!-- Significant Milestone 4 -->
+    <div class="archive-box">
+        <img src="a22.jpg" alt="Significant Milestone 4 Image">
+        <h2>First Night Race in Singapore</h2>
+        <p>
+            The Singapore Grand Prix held in 2008 marked Formula 1's first-ever night race.
+        </p>
+    </div>
+
+    <!-- New Significant Milestone 5 -->
+    <div class="archive-box">
+        <img src="a23.jpg" alt="Significant Milestone 5 Image">
+        <h2>2014 Hybrid Power Units</h2>
+        <p>
+            The introduction of hybrid power units in 2014 brought a new era of technological advancements to Formula 1.
+        </p>
+    </div>
+
+    <!-- New Significant Milestone 6 -->
+    <div class="archive-box">
+        <img src="a24.jpg" alt="Significant Milestone 6 Image">
+        <h2>Seventh World Title by Lewis Hamilton</h2>
+        <p>
+            Lewis Hamilton's seventh World Championship in 2020 equaled Michael Schumacher's record.
+        </p>
+    </div>
+
+    <!-- New Significant Milestone 7 -->
+    <div class="archive-box">
+        <img src="a25.jpg" alt="Significant Milestone 7 Image">
+        <h2>1978 Swedish Grand Prix</h2>
+        <p>
+            The 1978 Swedish Grand Prix at Anderstorp Raceway was the first F1 victory for a turbocharged car. 
+        </p>
+    </div>
+
+    <!-- New Significant Milestone 8 -->
+    <div class="archive-box">
+        <img src="a26.jpg" alt="Significant Milestone 8 Image">
+        <h2>2019 Italian Grand Prix</h2>
+        <p>
+            The 2019 Italian Grand Prix at Monza witnessed Charles Leclerc's maiden F1 victory with Ferrari. 
+        </p>
+    </div>
+
+    <!-- New Significant Milestone 9 -->
+    <div class="archive-box">
+        <img src="a27.jpg" alt="Significant Milestone 9 Image">
+        <h2>1968 Belgian Grand Prix</h2>
+        <p>
+            The 1968 Belgian Grand Prix at Spa-Francorchamps saw Bruce McLaren secure his first and only F1 victory.
+        </p>
+    </div>
+</div>
+
+    </div>
+</body>
+</html>

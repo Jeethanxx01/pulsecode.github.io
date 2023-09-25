@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formula 1 Poll</title>
+    <style>
+        body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background-color: #f9f9f9;
+    }
+    h1 {
+        margin-bottom: 10px;
+        color: #333;
+    }
+    p {
+        color: #555;
+    }
+    label {
+        display: block;
+        margin-bottom: 10px;
+        color: #666;
+        cursor: pointer;
+    }
+    button {
+        margin-top: 20px;
+    }
+    #pollForm {
+        border: 1px solid #ccc;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #fff;
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    }
+    label input[type="radio"] {
+        margin-right: 10px;
+    }
+    button[type="button"] {
+        padding: 8px 15px;
+        background-color: #007BFF;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    button[type="button"]:hover {
+        background-color: #0056b3;
+    }
+    #result {
+        display: none;
+        margin-top: 30px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        background-color: #fff;
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    }
+    #result h2 {
+        margin-top: 0;
+        color: #333;
+    }
+    #result p {
+        margin: 8px 0;
+        color: #555;
+    }
+    </style>
+</head>
+<body>
+    <h1>Formula 1 Team Poll</h1>
+    <p>Vote for your favorite Formula 1 team:</p>
+    
+    <form id="pollForm">
+        <label>
+            <input type="radio" name="team" value="Mercedes"> Mercedes
+        </label>
+        <label>
+            <input type="radio" name="team" value="Red Bull Racing"> Red Bull Racing
+        </label>
+        <label>
+            <input type="radio" name="team" value="Ferrari"> Ferrari
+        </label>
+        <label>
+            <input type="radio" name="team" value="McLaren"> McLaren
+        </label>
+        
+        <button type="button" onclick="submitVote()">Submit Vote</button>
+    </form>
+    
+    <div id="result">
+        <h2>Poll Results</h2>
+        <p id="mercedesCount">Mercedes: 0</p>
+        <p id="redBullCount">Red Bull Racing: 0</p>
+        <p id="ferrariCount">Ferrari: 0</p>
+        <p id="mclarenCount">McLaren: 0</p>
+    </div>
+    
+    <script>
+        function submitVote() {
+            const selectedTeam = document.querySelector('input[name="team"]:checked');
+            if (selectedTeam) {
+                const teamName = selectedTeam.value;
+                alert(`You voted for ${teamName}!`);
+                updateResults(teamName);
+            } else {
+                alert('Please select a team before submitting.');
+            }
+        }
+        
+        function updateResults(team) {
+            const resultDiv = document.getElementById('result');
+            const teamCount = document.getElementById(`${team.toLowerCase()}Count`);
+            const currentCount = parseInt(teamCount.textContent.split(': ')[1]);
+            teamCount.textContent = `${team}: ${currentCount + 1}`;
+            resultDiv.style.display = 'block';
+        }
+    </script>
+</body>
+</html>

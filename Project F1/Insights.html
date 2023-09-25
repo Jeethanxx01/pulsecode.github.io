@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formula 1 Technical Insights</title>
+    <style> @font-face {
+        font-family: 'Formula font';
+        src: url(Font/Formula1-Regular.otf);
+    }
+        /* General Styles */
+        body {
+            font-family: "Formula font", sans-serif;
+            background-color: #b5b1b1;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 10px;
+        }
+        .box {
+            width: calc(50% - 30px);
+            margin-bottom: 20px;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            transition: transform 0.2s, box-shadow 0.2s;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+        .box img {
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.2s;
+          }
+        .box h2 {
+            font-size: 20px;
+            margin: 0;
+            color: #333;
+        }
+        .box p {
+            color: #666;
+            max-height: 100px;
+            overflow: hidden;
+        }
+        .box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+        .box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .box:hover img {
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        .box:hover::before {
+            opacity: 1;
+        }
+        @media only screen and (max-width: 768px) {
+            .box {
+                width: 100%;
+            }
+        }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    border-radius: 5px;
+    z-index: 1;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .dropdown-content a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease-in-out;
+  }
+  .dropdown-content a:hover {
+    background-color: #444;
+    border-radius: 5px;
+  }
+/* Basic styling for the header and footer */
+header, footer {
+background: linear-gradient(45deg, #d40d0dcd, #733535, #000000);
+color: #fbfafad9;
+  padding: 10px;
+text-align: center;
+}
+
+/* Styling for the navigation menu */
+nav ul {
+  list-style: none;
+  display: flex;
+justify-content: center; 
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+* Responsive adjustments */
+@media screen and (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+    </style>
+</head>
+<body>
+<header>
+    <h1>Formula 1 Technical Insights</h1>
+    <nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li class="dropdown">
+      <a href="javascript:void(0);" class="dropbtn">Racing</a>
+      <div class="dropdown-content">
+        <a href="updates.html">Insider</a>
+        <a href="racing.html">Grand prix </a>
+        <a href="profiles.html">profiles</a>
+        <a href="regulations.html">Regulations</a>
+      </div>
+    </li>
+<li class="dropdown">
+      <a href="javascript:void(0);" class="dropbtn">Information</a>
+      <div class="dropdown-content">
+        <a href="technical.html">Technical Terms</a>
+        <a href="insights.html">Engineering Insights</a>
+        <a href="champions.html">Champions stats </a>
+        <a href="records.html">Records</a>
+      </div>
+    </li>
+ <li class="dropdown">
+      <a href="javascript:void(0);" class="dropbtn">Media</a>
+      <div class="dropdown-content">
+        <a href="archives.html">Archive</a>
+        <a href="engagement.html">Engagement</a>
+        <a href="multimedia.html">Multimedia</a>
+      </div>
+    </li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+</nav>
+  </header>
+    <div class="container">
+        <!-- Box 1 -->
+        <div class="box">
+            <img src="i1.jpg" alt="Box 1 Image">
+            <h2>Advanced Aerodynamics</h2>
+            <p>Advanced Formula 1 aerodynamics optimize car performance. Components like wings and diffusers create downforce, pressing the car to the track for better grip and cornering. Streamlined shapes reduce drag, enhancing speed. Engineers balance these factors for optimal race results, blending science and design.
+            </p>
+        </div>
+
+        <!-- Box 2 -->
+        <div class="box">
+            <img src="i2.jpg" alt="Box 2 Image">
+            <h2>Hybrid Power Units</h2>
+            <p>
+                Formula 1's Hybrid Power Units (HPUs) combine a combustion engine with electric motors. The Internal Combustion Engine (ICE) burns fuel for power and charges a battery. Electric units harvest energy from braking and aid acceleration, boosting efficiency and performance while meeting modern sustainability demands.
+            </p>
+        </div>
+
+        <!-- Box 3 -->
+        <div class="box">
+            <img src="i3.jpg" alt="Box 3 Image">
+            <h2>Chassis and Suspension</h2>
+            <p>
+                In Formula 1, the chassis is the car's structural framework, including the cockpit, safety cell, and aerodynamic elements. The suspension comprises components like springs, dampers, and control arms that connect the wheels to the chassis. It ensures optimal tire contact, handling, and responsiveness for racing at high speeds and varied track conditions.
+            </p>
+        </div>
+
+        <!-- Box 4 -->
+        <div class="box">
+            <img src="i4.jpg" alt="Box 4 Image">
+            <h2>Braking Systems</h2>
+            <p>
+                Formula 1 braking systems are advanced and crucial for performance. Carbon-fiber brake discs and pads endure extreme heat, offering exceptional stopping power. Brake-by-wire technology allows precise control, redistributing energy for hybrid systems. Efficient brakes are vital for cornering, overtaking, and race strategy.
+            </p>
+        </div>
+
+        <!-- Box 5 -->
+        <div class="box">
+            <img src="i6.jpg" alt="Box 5 Image">
+            <h2>Power Unit Mapping</h2>
+            <p>
+                Power unit mapping in Formula 1 refers to adjusting the engine's performance characteristics via software. Teams optimize parameters like fuel delivery, ignition timing, and energy deployment to enhance power delivery and efficiency for different race situations. Mapping affects acceleration, top speed, and fuel consumption, impacting overall race strategy.
+            </p>
+        </div>
+
+        <!-- Box 6 -->
+        <div class="box">
+            <img src="i17.jpg" alt="Box 6 Image">
+            <h2>Materials and Composites</h2>
+            <p>
+               Formula 1 employs advanced materials and composites to enhance performance and safety. Carbon fiber-reinforced composites are used for chassis, bodywork, and aerodynamic components, providing strength and lightweight construction. These materials optimize agility, downforce, and impact protection, pushing the boundaries of engineering in motorsport.
+            </p>
+        </div>
+
+        <!-- Box 7 -->
+        <div class="box">
+            <img src="i7.jpg" alt="Box 7 Image">
+            <h2>Data Analytics in F1</h2>
+            <p>
+               Data analytics in Formula 1 involves collecting and analyzing vast amounts of data from sensors on the car, track, and environment. Teams use this data to optimize performance, make strategic decisions, and refine setups. From tire wear to aerodynamics, data analytics drive innovation, enhancing speed, efficiency, and race outcomes.
+            </p>
+        </div>
+
+        <!-- Box 8 -->
+        <div class="box">
+            <img src="i8.jpg" alt="Box 8 Image">
+            <h2>KERS in formula 1</h2>
+            <p>
+                KERS (Kinetic Energy Recovery System) and ERS (Energy Recovery System) are Formula 1 technologies that harness and reuse energy. KERS, previously used, captured braking energy to provide a power boost. ERS, the modern version, harvests heat from both brakes and exhaust, feeding it into a hybrid power unit for added acceleration, enhancing efficiency and race strategy.
+            </p>
+        </div>
+
+        <!-- Box 9 -->
+        <div class="box">
+            <img src="i9.jpg" alt="Box 9 Image">
+            <h2>Active Suspension</h2>
+            <p>
+               Active suspension in Formula 1 refers to a dynamic system that adjusts the car's suspension settings in real-time. Sensors detect track conditions and car behavior, allowing the suspension to adapt instantly. This improves grip, stability, and cornering, enhancing overall performance by maintaining optimal tire contact and handling characteristics.
+            </p>
+        </div>
+
+        <!-- Box 10 -->
+        <div class="box">
+            <img src="i10.jpg" alt="Box 10 Image">
+            <h2>Simulator Technology</h2>
+            <p>
+                Simulator technology in Formula 1 involves advanced virtual environments that replicate real-world race conditions. Teams use these simulators to test setups, refine strategies, and develop drivers' skills. Accurate physics models and track simulations allow for efficient learning, honing performance, and making informed decisions before hitting the actual race circuit.
+            </p>
+        </div>
+
+        <!-- Box 11 -->
+        <div class="box">
+            <img src="i11.jpg" alt="Box 11 Image">
+            <h2>Energy Recovery Systems</h2>
+            <p>
+                Energy Recovery Systems (ERS) in Formula 1 capture and reuse wasted energy. The system includes MGU-K, which converts kinetic energy during braking into electrical energy, and MGU-H, which harvests heat energy from exhaust gases. The stored energy is later deployed for extra power, boosting acceleration and efficiency while racing.
+            </p>
+        </div>
+
+        <!-- Box 12 -->
+        <div class="box">
+            <img src="i12.jpg" alt="Box 12 Image">
+            <h2>Aero-Wheel Covers</h2>
+            <p>
+               Aero-wheel covers in Formula 1 are streamlined coverings placed over the wheels to improve aerodynamic efficiency. These covers reduce turbulence around the spinning wheels, minimizing drag and enhancing overall airflow around the car. However, as of my last update in September 2021, such covers weren't yet a standard feature due to ongoing discussions about their impact on racing and safety.
+            </p>
+        </div>
+
+        <!-- Box 13 -->
+        <div class="box">
+            <img src="i13.jpg" alt="Box 13 Image">
+            <h2>Steering Wheel Technology</h2>
+            <p>
+               Formula 1 steering wheel technology is intricate and vital for race control. It houses buttons and dials to adjust settings like fuel mix, brake bias, and energy deployment. Screens provide data on tire conditions, lap times, and more. This multifunctional tool demands split-second decisions and aids race strategy in the fast-paced F1 environment.
+            </p>
+        </div>
+
+        <!-- Box 14 -->
+        <div class="box">
+            <img src="i14.jpg" alt="Box 14 Image">
+            <h2>Drag Reduction System (DRS)</h2>
+            <p>
+                The Drag Reduction System (DRS) in Formula 1 is a technology that reduces aerodynamic drag and enhances overtaking. It involves an adjustable flap on the rear wing. Drivers can activate DRS in designated zones when they're closely following another car. This reduces downforce, allowing for higher speeds and easier overtaking due to decreased air resistance.
+            </p>
+        </div>
+
+        <!-- Box 15 -->
+        <div class="box">
+            <img src="i15.jpg" alt="Box 15 Image">
+            <h2>Thermal Imaging Technology</h2>
+            <p>
+                Thermal imaging technology in Formula 1 involves using specialized cameras to capture heat signatures from various car components, tires, and track surfaces. This data helps teams analyze tire behavior, brake temperatures, and overall car performance. It aids in optimizing setups, managing wear, and making strategic decisions based on temperature data during races and testing.
+            </p>
+        </div>
+ <!-- Box 16 -->
+        <div class="box">
+            <img src="i16.jpg" alt="Box 16 Image">
+            <h2>Energy Storage Systems</h2>
+            <p>
+                Energy Storage Systems (ESS) in Formula 1 encompass components like batteries and capacitors that store energy collected from various sources, such as braking and exhaust heat. This stored energy can then be deployed to provide extra power, enhancing acceleration and overall performance while adhering to the sport's hybrid regulations and sustainability goals.
+            </p>
+       </div>
+    </div>
+</body>
+</html>

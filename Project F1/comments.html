@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Website</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        header h1 {
+            font-size: 24px;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        #comment-section {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border-top: 1px solid #ccc;
+        }
+
+        #comment-section h2 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        #commento {
+            margin-top: 20px;
+        }
+
+        /* Style Commento comments section */
+        .commento {
+            margin-top: 20px;
+        }
+
+        .commento .commento__header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .commento .commento__author {
+            font-weight: bold;
+        }
+
+        .commento .commento__metadata {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .commento .commento__content {
+            padding: 10px;
+            background-color: #f7f7f7;
+            border-radius: 5px;
+        }
+
+        .commento .commento__actions {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 10px;
+        }
+
+        .commento .commento__actions button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 5px;
+        }
+
+        .commento .commento__actions button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <!-- Your website content goes here -->
+    </main>
+
+    <section id="comment-section">
+        <h2>Comments</h2>
+        <div id="commento"></div>
+    </section>
+
+    <script defer src="https://cdn.commento.io/js/commento.js"></script>
+</body>
+</html>
