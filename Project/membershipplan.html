@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Football Turf Website</title>
-
     <style>
         @font-face {
             font-family: "Formula font";
@@ -11,37 +12,11 @@
 
         }
 
-        /* Reset some default styling and your existing styles */
-
-
-        .card {
-            border: 4px solid #a6a5a5;
-            padding: 10px;
-            width: 250px;
-            height: 350px;
-            margin: 10px;
-            background: linear-gradient(45deg,#2d1212,#021b24,rgb(64, 167, 208));
-            color: #fdfdfd;
-            text-align: center;
-            line-height: 20px;
-            font-size: 18px;
-            border-radius: 8px;
-            position: static;
-            align-items: center;
-        }
-
-        /* Style for the image */
-        .card img {
-            width: 150px;
-            height: 150px;
-            /* Maintain the aspect ratio of the image */
-            margin-bottom: 0px;
-            /* Add some spacing between the image and text */
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            font-family: "Formula font", sans-serif;
         }
 
         header {
@@ -51,10 +26,6 @@
             text-align: center;
             width: 100%;
             margin-top: 0px;
-        }
-
-        body {
-            font-family: "Formula font", sans-serif;
         }
 
         nav {
@@ -67,6 +38,19 @@
             color: #fff;
             text-decoration: none;
             margin: 0 15px;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: bottom center;
+            text-align: center;
+            margin-top: 20px;
         }
 
         button {
@@ -88,7 +72,7 @@
 
             nav li {
                 margin-right: 0;
-                margin-bottom: 0px;
+                margin-bottom: 10px;
             }
         }
 
@@ -96,28 +80,54 @@
             background-color: rgb(9, 190, 190);
         }
 
-        .container {
+
+
+        section {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #3498db;
+            text-align: center;
+        }
+
+        .box-container {
             display: flex;
             flex-wrap: wrap;
-            /* Allow boxes to wrap to the next row */
-            justify-content: flex-start;
-            visibility: visible;
-            align-items: center;
+            justify-content: space-between;
         }
 
-        div {
-            align-items: center;
+        .box {
+            width: 48%;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background: linear-gradient(45deg, #aba5a5,#ef7d90,#f5f0f1);
+            /* White background */
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-sizing: border-box;
         }
 
-        h4 {
-            margin: auto;
-            padding: 6px;
+        .box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         }
-       .card li{
-        text-align: justify;
-        line-height: 25px;
-        font-size: small;
 
+        h3 {
+            color: #073554;
+            /* Blue color */
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        p {
+            color: #373535;
+            /* Dark gray color */
         }
     </style>
 </head>
@@ -140,66 +150,99 @@
             </li>
         </ul>
     </nav>
-    <div class="container">
-        <div class="card">
-            <h4>Cafeteria and refreshments</h4>
-            <img src="cafe.jpg" alt="Cafeteria and refreshments">
-            <li>Offer a variety of snacks, light meals, and beverages</li>
-            <li>Include nutritious choices to support athletes' needs.</li>
-            <li>Create a relaxing space for players and spectators.</li>
-        </div>
-        <div class="card">
-            <h4>Online Booking System</h4>
-            <img src="onlinebs.png" alt="Online Booking System">
-            <li>Users can book turf time from anywhere, at any time.</li>
-            <li>Available for bookings around the clock.</li>
-            <li>Trustworthy online payment options.</li>
-        </div>
-        <div class="card">
-            <h4>Pro Shop</h4>
-            <img src="proshop.jpg" alt="Pro Shop">
-            <li>Offers a range of football-related items, including jerseys, hats, scarves, and fan gear.</li>
-            <li>Convenient shopping for fans and players, both on-site.</li>
-            <li>Officially licensed products for authenticity.</li>
-        </div>
-        <div class="card">
-            <h4>Dressing Room</h4>
-            <img src="dsroom.jpg" alt="Dressing Room">
-            <li>Equipped with individual lockers for players to securely store personal belongings and equipment.</li>
-            <li>Comfortable seating areas for players to change into their gear and footwear.</li>
-            <li>Provides mirrors and areas for players to check their appearance.</li>
-        </div>
-        <div class="card">
-            <h4>Medical Center</h4>
-            <img src="medical.webp" alt="Medical Center">
-            <li>Ensure players' safety during matches or training.</li>
-            <li>Quick access to medical personnel for injuries.</li>
-            <li>Install defibrillators and first aid stations.</li>
-        </div>
-        <div class="card">
-            <h4>Technology Integration</h4>
-            <img src="techint.jpg" alt="Technology Integration">
-            <li>Technology for monitoring and optimizing turf conditions.</li>
-            <li>Electronic scoreboards and video screens for real-time updates.</li>
-            <li>Surveillance cameras and access control for enhanced security</li>
-        </div>
-        <div class="card">
-            <h4>Washrooms</h4>
-            <img src="wash.jpeg" alt="Washrooms">
-            <li>Hygiene Maintenance</li>
-            <li>Maintains privacy with proper dividers, locks, and well-designed layouts.</li>
-            <li>Well-designed and spacious layouts to provide comfort and ease of use for all users.</li>
-        </div>
-        <div class="card">
-            <h4>Fitness Class</h4>
-            <img src="fit.jpeg" alt="Fitness Class">
-            <li>Trained gym instructors available for guidance and assistance.</li>
-            <li>Individualized workout plans catering to diverse fitness goals.</li>
-            <li>Flexible hours for players and staff to access the gym facility.</li>
-        </div>
-        
-    </div>
+    <section>
+        <h2>Turf booking plans</h2>
+        <div class="box-container">
+            <div class="box">
+                <h3>INR ₹1400</h3>
+                <p>7 a-side football court</p>
+                <p>one hour of game time</p>
+                <p>Refunds are not available.</p>
+            </div>
 
+            <div class="box">
+                <h3>INR ₹1000</h3>
+                <p>5 a-side football court</p>
+                <p>one hour of game time</p>
+                <p>Refunds are not available.</p>
+            </div>
+
+            <div class="box">
+                <h3>INR ₹2600</h3>
+                <p>7 a-side football court</p>
+                <p>two hour of game time</p>
+                <p>Refunds are not available.</p>
+            </div>
+
+            <div class="box">
+                <h3>INR ₹2000</h3>
+                <p>5 a-side football court</p>
+                <p>Two hour of game time</p>
+                <p>Refunds are not available.</p>
+            </div>
+
+            <div class="box">
+                <h3>INR ₹4200</h3>
+                <p>7 a-side football court</p>
+                <p>Three hour of game time</p>
+                <p>Refunds are applicable with a 30% processing fee.</p>
+            </div>
+
+            <div class="box">
+                <h3>INR ₹2800</h3>
+                <p>5 a-side football court</p>
+                <p>Three hour of game time</p>
+                <p>Refunds are applicable with a 30% processing fee.</p>
+            </div>
+
+            <div class="box">
+                <h3>INR ₹10000</h3>
+                <p>This facility is exclusively available on weekdays, not on weekends.</p>
+                <p>7 a-side football court</p>
+                <p>whole day of game access[9:00 AM - 5:00 PM].</p>
+                <p>Refunds are applicable with a 30% processing fee.</p>
+            </div>
+
+            <div class="box">
+                <h3>INR ₹7000</h3>
+                <p>This facility is exclusively available on weekdays, not on weekends.</p>
+                <p>5 a-side football court</p>
+                <p>whole day of game access[9:00 AM - 5:00 PM].</p>
+                <p>Refunds are applicable with a 30% processing fee.</p>
+            </div>
+        </div>
+
+        <h2>Membership plans</h2>
+        <div class="box-container">
+            <div class="box">
+                <h3>Basic</h3>
+                <p>The monthly membership fee is INR ₹500.</p>
+                <p>Enjoy access to locker facilities.</p>
+                <p>Access the fundamental facilities provided for club members.</p>
+            </div>
+
+            <div class="box">
+                <h3>Silver</h3>
+                <p>The monthly membership fee is INR ₹1500.</p>
+                <p>Enjoy access to locker facilities and fundamental facilities </p>
+                <p>Get a 10% discount on bookings.</p>
+            </div>
+
+            <div class="box">
+                <h3>Gold</h3>
+                <p>The monthly membership fee is INR ₹2000.</p>
+                <p>Get a 10% discount on bookings and enjoy access to locker facilities.</p>
+                <p>Get 10% discount in cafetaria
+                <p></p>
+            </div>
+
+            <div class="box">
+                <h3>Premium</h3>
+                <p>The monthly membership fee is INR ₹3000.</p>
+                <p>Get a 20% discount on bookings and enjoy access to locker facilities.</p>
+                <p>Get 10% discount in cafetaria</p>
+            </div>
+    </section>
 </body>
 
 </html>
