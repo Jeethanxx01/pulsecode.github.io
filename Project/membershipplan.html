@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Turf Website</title>
+    <style>
+        @font-face {
+            font-family: "Formula font";
+            src: url(Font/Kanit-Regular.ttf);
+
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            font-family: "Formula font", sans-serif;
+        }
+
+        header {
+            background: linear-gradient(45deg, #d40d0dcd, #733535, #000000);
+            color: #fbfafad9;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+            margin-top: 0px;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: bottom center;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #DC0000;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            margin-top: 20px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        @media screen and (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav li {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+        }
+
+        .mem {
+            background-color: rgb(9, 190, 190);
+        }
+
+
+
+        section {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #3498db;
+            text-align: center;
+        }
+
+        .box-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .box {
+            width: 48%;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background: linear-gradient(45deg, #aba5a5,#ef7d90,#f5f0f1);
+            /* White background */
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-sizing: border-box;
+        }
+
+        .box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        h3 {
+            color: #073554;
+            /* Blue color */
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        p {
+            color: #373535;
+            /* Dark gray color */
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Football Turf Website</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <a href="index.html">Home</a>
+            <a href="Turfdetails.html">Turf Details </a>
+            <a href="membershipplan.html">Membership Plans</a>
+            <a href="aboutus.html">About Us</a>
+            <li>
+                <button class="button" onclick="window.location.href='booknow.html'">Book Now</button>
+                <button class="mem" onclick="window.location.href='membership.html'">Membership</button>
+            </li>
+        </ul>
+    </nav>
+    <section>
+        <h2>Turf booking plans</h2>
+        <div class="box-container">
+            <div class="box">
+                <h3>INR ₹1400</h3>
+                <p>7 a-side football court</p>
+                <p>one hour of game time</p>
+                <p>Refunds are not available.</p>
+            </div>
+
+            <div class="box">
+                <h3>INR ₹1000</h3>
+                <p>5 a-side football court</p>
+                <p>one hour of game time</p>
+                <p>Refunds are not available.</p>
+            </div>
+
+            <div class="box">
+                <h3>INR ₹2600</h3>
+                <p>7 a-side football court</p>
+                <p>two hour of game time</p>
+                <p>Refunds are not available.</p>
+            </div>
+
+            <div class="box">
+                <h3>INR ₹2000</h3>
+                <p>5 a-side football court</p>
+                <p>Two hour of game time</p>
+                <p>Refunds are not available.</p>
+            </div>
+
+            <div class="box">
+                <h3>INR ₹4200</h3>
+                <p>7 a-side football court</p>
+                <p>Three hour of game time</p>
+                <p>Refunds are applicable with a 30% processing fee.</p>
+            </div>
+
+            <div class="box">
+                <h3>INR ₹2800</h3>
+                <p>5 a-side football court</p>
+                <p>Three hour of game time</p>
+                <p>Refunds are applicable with a 30% processing fee.</p>
+            </div>
+
+            <div class="box">
+                <h3>INR ₹10000</h3>
+                <p>This facility is exclusively available on weekdays, not on weekends.</p>
+                <p>7 a-side football court</p>
+                <p>whole day of game access[9:00 AM - 5:00 PM].</p>
+                <p>Refunds are applicable with a 30% processing fee.</p>
+            </div>
+
+            <div class="box">
+                <h3>INR ₹7000</h3>
+                <p>This facility is exclusively available on weekdays, not on weekends.</p>
+                <p>5 a-side football court</p>
+                <p>whole day of game access[9:00 AM - 5:00 PM].</p>
+                <p>Refunds are applicable with a 30% processing fee.</p>
+            </div>
+        </div>
+
+        <h2>Membership plans</h2>
+        <div class="box-container">
+            <div class="box">
+                <h3>Basic</h3>
+                <p>The monthly membership fee is INR ₹500.</p>
+                <p>Enjoy access to locker facilities.</p>
+                <p>Access the fundamental facilities provided for club members.</p>
+            </div>
+
+            <div class="box">
+                <h3>Silver</h3>
+                <p>The monthly membership fee is INR ₹1500.</p>
+                <p>Enjoy access to locker facilities and fundamental facilities </p>
+                <p>Get a 10% discount on bookings.</p>
+            </div>
+
+            <div class="box">
+                <h3>Gold</h3>
+                <p>The monthly membership fee is INR ₹2000.</p>
+                <p>Get a 10% discount on bookings and enjoy access to locker facilities.</p>
+                <p>Get 10% discount in cafetaria
+                <p></p>
+            </div>
+
+            <div class="box">
+                <h3>Premium</h3>
+                <p>The monthly membership fee is INR ₹3000.</p>
+                <p>Get a 20% discount on bookings and enjoy access to locker facilities.</p>
+                <p>Get 10% discount in cafetaria</p>
+            </div>
+    </section>
+</body>
+
+</html>

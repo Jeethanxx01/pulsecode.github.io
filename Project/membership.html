@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Turf Website</title>
+    <style>
+        @font-face {
+            font-family: "Formula font";
+            src: url(Font/Kanit-Regular.ttf);
+
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            font-family: "Formula font", sans-serif;
+        }
+
+
+        header {
+            background: linear-gradient(45deg, #d40d0dcd, #733535, #000000);
+            color: #fbfafad9;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+            margin-top: 0px;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: bottom center;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #DC0000;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            margin-top: 20px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        @media screen and (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav li {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+        }
+
+        .mem {
+            background-color: rgb(9, 190, 190);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Football Turf Website</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <a href="index.html">Home</a>
+            <a href="Turfdetails.html">Turf Details </a>
+            <a href="membershipplan.html">Membership Plans</a>
+            <a href="aboutus.html">About Us</a>
+            <li>
+                <button class="button" onclick="window.location.href='booknow.html'">Book Now</button>
+                <button class="mem" onclick="window.location.href='membership.html'">Membership</button>
+            </li>
+        </ul>
+    </nav>
+</body>
+
+</html>
