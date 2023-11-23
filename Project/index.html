@@ -15,23 +15,12 @@
         body {
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #2f2929;
             font-family: "Formula font", sans-serif;
         }
 
-
-        header {
-            background: linear-gradient(45deg, #d40d0dcd, #733535, #000000);
-            color: #fbfafad9;
-            padding: 10px;
-            text-align: center;
-            width: 100%;
-            margin-top: 0px;
-        }
-
         nav {
-            background-color: #444;
-            padding: 10px;
+         
             text-align: center;
         }
 
@@ -57,7 +46,7 @@
         .slideshow {
             position: relative;
             width: 100%;
-            height: 520px;
+            height: 1000px;
             overflow: hidden;
         }
 
@@ -163,57 +152,50 @@
             }
         }
 
-        .mem {
-            background-color: rgb(9, 190, 190);
+        header {
+            background: linear-gradient(45deg, hsla(0, 97%, 45%, 0.804), #4f1616, #000000);
+            color: #fbfafad9;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+            margin-top: 0px;
         }
     </style>
 </head>
 
 <body>
-
     <header>
-        <h1>Football Turf Website</h1>
-    </header>
-
+    <h1>Thunderstrike Futsal Arena</h1>
     <nav>
         <ul>
             <a href="index.html">Home</a>
             <a href="Turfdetails.html">Turf Details </a>
-            <a href="membershipplan.html">Membership Plans</a>
+            <a href="membershipplan.html">Plans</a>
             <a href="aboutus.html">About Us</a>
             <li>
                 <button class="button" onclick="window.location.href='booknow.html'">Book Now</button>
-                <button class="mem" onclick="window.location.href='membership.html'">Membership</button>
+                <button class="button" onclick="window.location.href='membership.html'">Membership</button>
             </li>
         </ul>
     </nav>
+</header>
     <main>
         <div class="slideshow">
             <img src="p1.jpg" alt="Image 1">
-            <img src="p2.jpg" alt="Image 2">
+            <img src="p2.webp" alt="Image 2">
             <img src="p3.jpg" alt="Image 3">
             <img src="p4.jpg" alt="Image 4">
             <img src="p5.jpg" alt="Image 5">
-            <img src="p6.jpg" alt="Image 6">
-            <img src="p7.avif" alt="Image 7">
-            <img src="p8.jpg" alt="Image 8">
-            <img src="p9.jpg" alt="Image 9">
-            <img src="p10.jpg" alt="Image 10">
-            <img src="p11.avif" alt="Image 11">
+            <img src="p6.avif" alt="Image 6">
         </div>
         <div class="container">
-            <img id="logo" class="f1-image" src="logo2.png" alt="Turf Logo" width="400" height="500">
-            <h2>Welcome to Your Formula 1 Experience</h2>
-            <p>Feel the adrenaline rush as the engines roar!</p>
-            <button class="button">Start Your Engines</button>
+            <h2>Welcome to Your footballing experience Experience</h2>
+            <p>Feel the adrenaline rush at thunderstrike Futsal Arena</p>
         </div>
         <div class="news-container" id="news-container">
-            <div class="news-item active-news">News:Formula One’s Emilia-Romagna Grand Prix canceled because of deadly
-                floods in Italy - explore more in insider section</div>
-            <div class="news-item">News:Ricciardo to replace De Vries at AlphaTauri from the Hungarian Grand Prix -
-                explore more in insider section</div>
-            <div class="news-item">News: Stella explains how 'evolving' Norris is pulling McLaren along and has become a
-                'leading driver'- explore more in insider section</div>
+            <div class="news-item active-news">"I am constantly being asked about individuals. The only way to win is as a team." - Pelé</div>
+            <div class="news-item">"I don't believe skill was, or ever will be, the result of coaches. It is a result of a love affair between the child and the ball." - Roy Keane</div>
+            <div class="news-item">"Football is like a religion to me. I worship the ball, and I treat it like a god." - Diego Maradona</div>
         </div>
     </main>
     <script>
@@ -228,27 +210,6 @@
 
         setInterval(rotateNews, 5000);
 
-        const logo = document.getElementById("logo");
-        const startButton = document.querySelector(".button");
-
-        let rotationDeg = 0;
-        let isRotating = false;
-
-        startButton.addEventListener("click", () => {
-            if (!isRotating) {
-                isRotating = true;
-                rotationDeg += 360;
-
-                logo.style.transition = "transform 2s ease-in-out";
-                logo.style.transform = `rotate(${rotationDeg}deg)`;
-
-                setTimeout(() => {
-                    logo.style.transition = "none";
-                    logo.style.transform = "rotate(0deg)";
-                    isRotating = false;
-                }, 2000);
-            }
-        });
         const images = document.querySelectorAll('.slideshow img');
         let currentIndex = 0;
 
@@ -301,10 +262,10 @@
         displayImage(currentIndex);
         currentIndex++;
 
-        setInterval(transitionImages, 3000); // Change image every 3 seconds
+        setInterval(transitionImages, 5000); // Change image every 3 seconds
     </script>
     <footer>
-        <p>&copy; 2023 Football Turf Website</p>
+        <p>&copy; 2023 Thunderstrike Futsal Arena</p>
     </footer>
 
 </body>
