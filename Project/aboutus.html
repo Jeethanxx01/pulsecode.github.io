@@ -43,6 +43,7 @@
 
         section {
             padding: 20px;
+            visibility: visible;
         }
 
         footer {
@@ -82,11 +83,10 @@
         }
         body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
     background-color: #f8f8f8;
-    overflow-x: hidden;
 }
 
 header {
@@ -112,14 +112,14 @@ header {
     right: 0;
     bottom: 0;
     background: linear-gradient(45deg, #3498db, #e74c3c);
-    opacity: 0.7;
+    opacity: 0.2;
     z-index: -1;
 }
 
 .profile-container {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     padding: 20px;
     position: relative;
     z-index: 1;
@@ -129,13 +129,16 @@ header {
     background:linear-gradient(45deg,skyblue,white,lightgreen);
     border-radius: 20px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    margin: 20px auto 40px auto;
-    overflow: hidden;
+    margin: 20px;
+    overflow: visible;
     transform: translateZ(0); 
     transition: transform 0.3s ease-in-out;
     align-items: center;
     text-align: center;
     visibility:visible;
+    width: 600px;
+    height: 550px;
+    bottom: 40px;
 }
 
 .profile-card:hover {
@@ -202,14 +205,18 @@ header {
 
 footer {
     text-align: center;
-    margin-top: 0px;
-    padding: 0px;
+    margin-top: 20px;
+    padding: 10px;
     background-color: #333;
     color: #fff;
     position: fixed;
     width: 100%;
     bottom: 0;
     z-index: 2;
+}
+section .profile-container{
+    margin: 20px;
+    padding: 20px;
 }
 
     </style>
