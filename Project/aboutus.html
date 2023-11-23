@@ -30,8 +30,6 @@
         }
 
         nav {
-            background-color: #444;
-            padding: 10px;
             text-align: center;
         }
 
@@ -81,149 +79,153 @@
         .mem {
             background-color: rgb(9, 190, 190);
         }
+
         body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    background: linear-gradient(45deg,#030303,rgb(8, 175, 167),rgb(71, 69, 69));
-}
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            background: linear-gradient(45deg, #796f6f, rgb(190, 237, 235), rgb(71, 69, 69));
+        }
+        h1{
+            text-align: center;
+        }
+        h1:hover{
+            color: white;
+        }
 
-header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    position: relative;
-}
+        .header-content {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
 
-.header-content {
-    max-width: 800px;
-    margin: 0 auto;
-    position: relative;
-    z-index: 1;
-}
+        .header-content::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, #3498db, #e74c3c);
+            opacity: 0.2;
+            z-index: -1;
+        }
 
-.header-content::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(45deg, #3498db, #e74c3c);
-    opacity: 0.2;
-    z-index: -1;
-}
+        .profile-container {
+            display: flex;
+            justify-content: space-around;
+            /* flex-wrap: wrap; */
+            padding: 20px;
+            position: relative;
+            z-index: 1;
+        }
 
-.profile-container {
-    display: flex;
-    justify-content: space-around;
-    /* flex-wrap: wrap; */
-    padding: 20px;
-    position: relative;
-    z-index: 1;
-}
+        .profile-card {
+            background: linear-gradient(45deg, skyblue, white, lightgreen);
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            margin: 20px;
+            overflow: visible;
+            transform: translateZ(0);
+            transition: transform 0.3s ease-in-out;
+            align-items: center;
+            text-align: center;
+            visibility: visible;
+            width: 600px;
+            height: 550px;
+            bottom: 40px;
+        }
 
-.profile-card {
-    background:linear-gradient(45deg,skyblue,white,lightgreen);
-    border-radius: 20px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    margin: 20px;
-    overflow: visible;
-    transform: translateZ(0); 
-    transition: transform 0.3s ease-in-out;
-    align-items: center;
-    text-align: center;
-    visibility:visible;
-    width: 600px;
-    height: 550px;
-    bottom: 40px;
-}
+        .profile-card:hover {
+            transform: scale(1.05);
+        }
 
-.profile-card:hover {
-    transform: scale(1.05);
-}
+        .profile-img {
+            overflow: visible;
+            border-radius: 20px 20px 0 0;
+            margin-top: 20px;
+        }
 
-.profile-img {
-    overflow: visible;
-    border-radius: 20px 20px 0 0;
-    margin-top: 20px;
-}
+        .profile-img img {
+            width: 250px;
+            border-radius: 150px;
+            filter: grayscale(30%);
+            transform: scale(1.1);
+            transition: transform 0.3s ease-in-out;
+            height: 250px;
+            align-items: center;
+            justify-items: center;
+            justify-content: center;
+        }
 
-.profile-img img {
-    width: 250px;
-    border-radius: 150px;
-    filter: grayscale(30%);
-    transform: scale(1.1);
-    transition: transform 0.3s ease-in-out;
-    height: 250px;
-    align-items: center;
-    justify-items: center;
-    justify-content: center;
-}
+        .profile-card:hover .profile-img img {
+            transform: scale(1);
+        }
 
-.profile-card:hover .profile-img img {
-    transform: scale(1);
-}
+        .profile-info {
+            padding: 20px;
+            color: #333;
+            position: relative;
+            z-index: 1;
+        }
 
-.profile-info {
-    padding: 20px;
-    color: #333;
-    position: relative;
-    z-index: 1;
-}
+        .profile-info h2,
+        .profile-info p {
+            margin: 0;
+        }
 
-.profile-info h2,
-.profile-info p {
-    margin: 0;
-}
+        .profile-description {
+            font-style: italic;
+            margin-top: 10px;
+        }
 
-.profile-description {
-    font-style: italic;
-    margin-top: 10px;
-}
+        .profile-social {
+            margin-top: 20px;
+        }
 
-.profile-social {
-    margin-top: 20px;
-}
+        .social-link {
+            display: inline-block;
+            margin-right: 10px;
+            padding: 8px 15px;
+            background: linear-gradient(45deg, rgb(193, 64, 140), rgb(212, 116, 132), rgb(56, 56, 56));
+            color: rgb(3, 252, 252);
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out;
+        }
 
-.social-link {
-    display: inline-block;
-    margin-right: 10px;
-    padding: 8px 15px;
-    background:linear-gradient(45deg,yellow,pink,black);
-    color: #fb0202;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease-in-out;
-}
+        .social-link:hover {
+            background: linear-gradient(45deg, yellow, rgb(202, 73, 94), black);
+        }
 
-.social-link:hover {
-    background:linear-gradient(45deg,yellow,pink,black);
-}
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            z-index: 2;
+        }
 
-footer {
-    text-align: center;
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    z-index: 2;
-}
-section .profile-container{
-    margin: 20px;
-    padding: 20px;
-}
-.profile-social a:hover{
-    background: linear-gradient(45deg,blue,red,black);
-    font-weight: bolder;
-    color: white;
-}
+        section .profile-container {
+            margin: 20px;
+            padding: 20px;
+        }
 
+        .profile-social a:hover {
+            background: linear-gradient(45deg, blue, red, black);
+            font-weight: bolder;
+            color: white;
+        }
+
+        nav a {
+            font-weight: bold;
+        }
     </style>
 </head>
 
@@ -231,72 +233,74 @@ section .profile-container{
 
     <header>
         <h1>Football Turf Website</h1>
+
+
+        <nav>
+            <ul>
+                <a href="index.html">Home</a>
+                <a href="Turfdetails.html">Turf Details </a>
+                <a href="membershipplan.html">Membership Plans</a>
+                <a href="aboutus.html">About Us</a>
+                <li>
+                    <button class="button" onclick="window.location.href='booknow.html'">Book Now</button>
+                    <button class="mem" onclick="window.location.href='membership.html'">Membership</button>
+                </li>
+            </ul>
+        </nav>
     </header>
+    <main>
+        <h1>"Fueling Your Football Passion"</h1>
 
-    <nav>
-        <ul>
-            <a href="index.html">Home</a>
-            <a href="Turfdetails.html">Turf Details </a>
-            <a href="membershipplan.html">Membership Plans</a>
-            <a href="aboutus.html">About Us</a>
-            <li>
-                <button class="button" onclick="window.location.href='booknow.html'">Book Now</button>
-                <button class="mem" onclick="window.location.href='membership.html'">Membership</button>
-            </li>
-        </ul>
-    </nav>
-    <header>
-        <div class="header-content">
-            <h1>Meet the innovative minds behind this site</h1>
-        </div>
-    </header>
 
-    <section class="profile-container">
+        <section class="profile-container">
 
-        <!-- Profile 1 -->
-        <div class="profile-card">
-            <div class="profile-img">
-                <img src="profile1.jpg" alt="Profile 1">
-            </div>
-            <div class="profile-info">
-                <h2>JEETHAN JOEL CRASTA</h2>
-                <p>Student</p>
-                <p>Computer Science and Engineering</p>
-                <p class="profile-description">Bringing digital experiences to life through thoughtful user-centric design. Passionate about turning ideas into visual stories.</p>
-                <div class="profile-social">
-                    <a href="https://github.com/Jeethanxx01" class="social-link">GitHub</a>
-                    <a href="https://www.instagram.com/jeethan_crasta" class="social-link">Instagram</a>
-                    <a href="https://www.linkedin.com/in/jeethan-crasta-5587a0248" class="social-link">LinkedIn</a>
-                    <a href="mailto:jeethancs@gmail.com" class="social-link">Gmail</a>
+            <!-- Profile 1 -->
+            <div class="profile-card">
+                <div class="profile-img">
+                    <img src="Jeeth.jpeg" alt="Jeethan Joel Crasta">
+                </div>
+                <div class="profile-info">
+                    <h2>JEETHAN JOEL CRASTA</h2>
+                    <p>Student</p>
+                    <p>Computer Science and Engineering</p>
+                    <p class="profile-description">Bringing digital experiences to life through thoughtful user-centric
+                        design. Passionate about turning ideas into visual stories.</p>
+                    <div class="profile-social">
+                        <a href="https://github.com/Jeethanxx01" class="social-link">GitHub</a>
+                        <a href="https://www.instagram.com/jeethan_crasta" class="social-link">Instagram</a>
+                        <a href="https://www.linkedin.com/in/jeethan-crasta-5587a0248" class="social-link">LinkedIn</a>
+                        <a href="mailto:jeethancs@gmail.com" class="social-link">Gmail</a>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <!-- Profile 2 -->
-        <div class="profile-card">
-            <div class="profile-img">
-                <img src="Bhav.jpeg" alt="Profile 2">
-            </div>
-            <div class="profile-info">
-                <h2>BHAVISHYA</h2>
-                <p>Student</p>
-                <p>Artificial Intelligence and Data Science Engineering</p>
-                <p class="profile-description">Loves to code and create seamless interactions. Enjoys experimenting with colors and shapes to create memorable designs.</p>
-                <div class="profile-social">
-                    <a href="https://github.com/bhavishyashetty" class="social-link">GitHub</a>
-                    <a href="https://www.instagram.com/shetty._.bhav" class="social-link">Instagram</a>
-                    <a href="https://www.linkedin.com/in/bhavishya-shetty-a0b018229" class="social-link">LinkedIn</a>
-                    <a href="mailto:bhavishetty2004@gmail.com" class="social-link">Gmail</a>
+            <!-- Profile 2 -->
+            <div class="profile-card">
+                <div class="profile-img">
+                    <img src="Bhav.jpeg" alt="Bhavishya">
+                </div>
+                <div class="profile-info">
+                    <h2>BHAVISHYA</h2>
+                    <p>Student</p>
+                    <p>Artificial Intelligence and Data Science Engineering</p>
+                    <p class="profile-description">Loves to code and create seamless interactions. Enjoys experimenting
+                        with
+                        colors and shapes to create memorable designs.</p>
+                    <div class="profile-social">
+                        <a href="https://github.com/bhavishyashetty" class="social-link">GitHub</a>
+                        <a href="https://www.instagram.com/shetty._.bhav" class="social-link">Instagram</a>
+                        <a href="https://www.linkedin.com/in/bhavishya-shetty-a0b018229"
+                            class="social-link">LinkedIn</a>
+                        <a href="mailto:bhavishetty2004@gmail.com" class="social-link">Gmail</a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-    </section>
-
+        </section>
+    </main>
     <footer>
-        <h3>Feel free to Ask.....</h3>
+        <h3>Thank you for visiting our website. Feel free to contact any of our teammates for more information.</h3>
     </footer>
-   
+
 </body>
 
 </html>
